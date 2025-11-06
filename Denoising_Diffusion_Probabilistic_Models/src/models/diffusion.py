@@ -1,4 +1,5 @@
 import torch
+import torch.nn as nn
 
 class DiffusionModel:
     def __init__(self, config):
@@ -41,4 +42,3 @@ class DiffusionModel:
         batch_size = t.shape[0]
         result = values.gather(-1, t.cpu())
         return result.reshape(batch_size, *((1,) * (len(x_shape) - 1))).to(t.device)
-

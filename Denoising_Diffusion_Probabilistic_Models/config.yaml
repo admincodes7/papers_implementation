@@ -19,8 +19,7 @@ diffusion:
 
 data:
   dataset_type: "custom"
-  dataset_path: "/home/admino/Diffusion/dataset"
+  dataset_path: "/home/hemanth/only_ml/Diffusion/dataset"
   image_size: [32, 32]
   num_workers: 4
-
 

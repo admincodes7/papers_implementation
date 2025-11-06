@@ -19,4 +19,3 @@ def reverse_transform():
         transforms.Lambda(lambda t: t.cpu().numpy().astype(np.uint8)),
         transforms.ToPILImage(),
     ])
-

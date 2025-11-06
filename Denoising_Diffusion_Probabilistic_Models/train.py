@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import logging
 
-from src.unet import UNet
-from src.diffusion import DiffusionModel
-from src.transforms import get_transforms, reverse_transform
+from src.models.unet import UNet
+from src.models.diffusion import DiffusionModel
+from src.utils.transforms import get_transforms, reverse_transform
 
 def load_config(config_path):
     with open(config_path, 'r') as f:
@@ -105,4 +105,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

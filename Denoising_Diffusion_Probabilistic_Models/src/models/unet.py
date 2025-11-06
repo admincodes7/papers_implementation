@@ -90,4 +90,3 @@ class UNet(nn.Module):
             o = us(torch.cat((o, res), dim=1), t, **kwargs)
             
         return self.conv2(o)
-
